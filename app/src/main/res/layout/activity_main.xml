@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xjm.works.sht.modules.mian.ui.MainActivity">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rg_buttonmeun"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <RadioButton
+            style="@style/rbt_meun"
+            android:id="@+id/rbt_home"
+            android:text="主页"
+            android:drawableTop="@drawable/homeselector"/>
+        <RadioButton
+            style="@style/rbt_meun"
+            android:id="@+id/rbt_list"
+            android:text="参与"
+            android:drawableTop="@drawable/joinselector"/>
+        <RadioButton
+            style="@style/rbt_meun"
+            android:id="@+id/rbt_me"
+            android:text="个人"
+            android:drawableTop="@drawable/meselector"/>
+    </RadioGroup>
+
+    <com.xjm.works.sht.customview.MyViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp_main"
+        android:layout_above="@id/rg_buttonmeun">
+
+    </com.xjm.works.sht.customview.MyViewPager>
+
+</RelativeLayout>
